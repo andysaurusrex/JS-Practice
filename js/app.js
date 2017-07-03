@@ -18,8 +18,10 @@ var andrewAge = 21;
 var johnTotal = johnHeight + johnAge * 5;
 var andrewTotal = andrewHeight + andrewAge * 5;
 
-if (andrewTotal < johnTotal){
-  console.log("John wins the game!");
-} else {
-  console.log ("Andrew wins the game!");
+if (andrewTotal < johnTotal) {
+  console.log("John wins the game with " + johnTotal + " points!");
+} else if (andrewTotal > johnTotal) {
+  console.log ("Andrew wins the game with " + andrewTotal + " points!");
+} else if (score andrewTotal === johnTotal) {
+  console.log ("There is a draw!");
 }
