@@ -9,8 +9,8 @@
 
 // BONUS: Add third player and decide who wins. (Needs && operator)
 
-var johnHeight = 170.18;
-var andrewHeight = 177.80;
+var johnHeight = 170;
+var andrewHeight = 177;
 
 var johnAge = 20;
 var andrewAge = 21;
@@ -18,10 +18,28 @@ var andrewAge = 21;
 var johnTotal = johnHeight + johnAge * 5;
 var andrewTotal = andrewHeight + andrewAge * 5;
 
-if (andrewTotal < johnTotal) {
-  console.log("John wins the game with " + johnTotal + " points!");
-} else if (andrewTotal > johnTotal) {
-  console.log ("Andrew wins the game with " + andrewTotal + " points!");
-} else if (score andrewTotal === johnTotal) {
-  console.log ("There is a draw!");
+// Two player
+
+// if (andrewTotal < johnTotal) {
+//   console.log("John wins the game with " + johnTotal + " points!");
+// } else if (andrewTotal > johnTotal) {
+//   console.log ("Andrew wins the game with " + andrewTotal + " points!");
+// } else if (score andrewTotal === johnTotal) {
+//   console.log ("There is a draw!");
+// }
+
+// Three player
+
+var meganHeight = 158;
+var meganAge = 20;
+var meganTotal = meganHeight + meganAge * 5;
+
+if (johnTotal > andrewTotal && johnTotal > meganTotal){
+  console.log("John wins the game with " + johnTotal + " ponts!");
+} else if (andrewTotal > johnTotal && andrewTotal> meganTotal){
+  console.log("Andrew wins the game with " + andrewTotal + " points!");
+} else if (meganTotal > johnTotal && meganTotal > andrewTotal){
+  console.log("Megan wins the game with " + meganTotal + " points!");
+} else {
+  console.log("There is a draw!");
 }
